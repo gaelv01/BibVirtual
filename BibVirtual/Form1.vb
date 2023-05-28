@@ -7,6 +7,7 @@
         Dim blanco = Color.White
         Dim negro = Color.Black
         If btnClaroOscuro.Text = "Modo Oscuro" Then
+            Preferences.colorMode = "Modo Oscuro"
             Me.BackColor = fondoOscuro
             gpbLogin.BackColor = fondoOscuroSecondary
             lblBienvenido.ForeColor = blanco
@@ -20,6 +21,7 @@
             btnClaroOscuro.ForeColor = negro
             btnClaroOscuro.BackColor = blanco
         ElseIf btnClaroOscuro.Text = "Modo Claro" Then
+            Preferences.colorMode = "Modo Claro"
             Me.BackColor = blanco
             gpbLogin.BackColor = blanco
             lblBienvenido.ForeColor = negro
@@ -37,4 +39,17 @@
 
 
     End Sub
+
+    Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+        Dim user As String
+        Dim password As String
+        user = txtUsuario.Text
+        password = txtContrasena.Text
+        If user = "admin" And password = "admin" Then
+            Preferences.CustomName = "Gael Vivas"
+            Index.Show()
+            Me.Hide()
+        End If
+    End Sub
+
 End Class

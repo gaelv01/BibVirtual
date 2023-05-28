@@ -59,7 +59,7 @@ Partial Class Form1
         ' 
         lblMarca.AutoSize = True
         lblMarca.Font = New Font("Inter", 6.749999F, FontStyle.Regular, GraphicsUnit.Point)
-        lblMarca.Location = New Point(284, 338)
+        lblMarca.Location = New Point(264, 335)
         lblMarca.Name = "lblMarca"
         lblMarca.Size = New Size(135, 11)
         lblMarca.TabIndex = 13
@@ -207,7 +207,7 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         AutoSizeMode = AutoSizeMode.GrowAndShrink
         BackColor = Color.White
-        ClientSize = New Size(431, 355)
+        ClientSize = New Size(414, 355)
         Controls.Add(btnClaroOscuro)
         Controls.Add(lblMarca)
         Controls.Add(lblBienvenido)
