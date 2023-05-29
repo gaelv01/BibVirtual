@@ -22,245 +22,263 @@ Partial Class Index
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        spcContenedorProgram = New SplitContainer()
-        btnCerrarSesion = New Button()
-        btnAcercaDe = New Button()
-        btnAyuda = New Button()
-        btnAjustes = New Button()
-        btnHistorial = New Button()
-        btnReservas = New Button()
-        btnBuscar = New Button()
-        btnMisLibros = New Button()
-        btnInicio = New Button()
-        PanelInicio = New Panel()
-        btnPersonalizar = New Button()
-        GroupBox1 = New GroupBox()
-        lblSubBienvenida = New Label()
-        lblBienvenida = New Label()
-        CType(spcContenedorProgram, ComponentModel.ISupportInitialize).BeginInit()
-        spcContenedorProgram.Panel1.SuspendLayout()
-        spcContenedorProgram.Panel2.SuspendLayout()
-        spcContenedorProgram.SuspendLayout()
-        PanelInicio.SuspendLayout()
-        SuspendLayout()
-        ' 
-        ' spcContenedorProgram
-        ' 
-        spcContenedorProgram.Dock = DockStyle.Fill
-        spcContenedorProgram.Location = New Point(0, 0)
-        spcContenedorProgram.Name = "spcContenedorProgram"
-        ' 
-        ' spcContenedorProgram.Panel1
-        ' 
-        spcContenedorProgram.Panel1.Controls.Add(btnCerrarSesion)
-        spcContenedorProgram.Panel1.Controls.Add(btnAcercaDe)
-        spcContenedorProgram.Panel1.Controls.Add(btnAyuda)
-        spcContenedorProgram.Panel1.Controls.Add(btnAjustes)
-        spcContenedorProgram.Panel1.Controls.Add(btnHistorial)
-        spcContenedorProgram.Panel1.Controls.Add(btnReservas)
-        spcContenedorProgram.Panel1.Controls.Add(btnBuscar)
-        spcContenedorProgram.Panel1.Controls.Add(btnMisLibros)
-        spcContenedorProgram.Panel1.Controls.Add(btnInicio)
-        ' 
-        ' spcContenedorProgram.Panel2
-        ' 
-        spcContenedorProgram.Panel2.Controls.Add(PanelInicio)
-        spcContenedorProgram.Size = New Size(1094, 654)
-        spcContenedorProgram.SplitterDistance = 189
-        spcContenedorProgram.TabIndex = 1
-        ' 
-        ' btnCerrarSesion
-        ' 
-        btnCerrarSesion.Dock = DockStyle.Top
-        btnCerrarSesion.FlatAppearance.BorderColor = Color.White
-        btnCerrarSesion.FlatStyle = FlatStyle.Flat
-        btnCerrarSesion.Font = New Font("Inter SemiBold", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
-        btnCerrarSesion.Location = New Point(0, 562)
-        btnCerrarSesion.Name = "btnCerrarSesion"
-        btnCerrarSesion.Size = New Size(189, 92)
-        btnCerrarSesion.TabIndex = 9
-        btnCerrarSesion.Text = "Cerrar sesión"
-        btnCerrarSesion.UseVisualStyleBackColor = True
-        ' 
-        ' btnAcercaDe
-        ' 
-        btnAcercaDe.Dock = DockStyle.Top
-        btnAcercaDe.FlatAppearance.BorderColor = Color.White
-        btnAcercaDe.FlatStyle = FlatStyle.Flat
-        btnAcercaDe.Font = New Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        btnAcercaDe.Location = New Point(0, 500)
-        btnAcercaDe.Name = "btnAcercaDe"
-        btnAcercaDe.Size = New Size(189, 62)
-        btnAcercaDe.TabIndex = 8
-        btnAcercaDe.Text = "Acerca de"
-        btnAcercaDe.TextAlign = ContentAlignment.MiddleLeft
-        btnAcercaDe.UseVisualStyleBackColor = True
-        ' 
-        ' btnAyuda
-        ' 
-        btnAyuda.Dock = DockStyle.Top
-        btnAyuda.FlatAppearance.BorderColor = Color.White
-        btnAyuda.FlatStyle = FlatStyle.Flat
-        btnAyuda.Font = New Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        btnAyuda.Location = New Point(0, 438)
-        btnAyuda.Name = "btnAyuda"
-        btnAyuda.Size = New Size(189, 62)
-        btnAyuda.TabIndex = 7
-        btnAyuda.Text = "Ayuda"
-        btnAyuda.TextAlign = ContentAlignment.MiddleLeft
-        btnAyuda.UseVisualStyleBackColor = True
-        ' 
-        ' btnAjustes
-        ' 
-        btnAjustes.Dock = DockStyle.Top
-        btnAjustes.FlatAppearance.BorderColor = Color.White
-        btnAjustes.FlatStyle = FlatStyle.Flat
-        btnAjustes.Font = New Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        btnAjustes.Location = New Point(0, 376)
-        btnAjustes.Name = "btnAjustes"
-        btnAjustes.Size = New Size(189, 62)
-        btnAjustes.TabIndex = 6
-        btnAjustes.Text = "Ajustes"
-        btnAjustes.TextAlign = ContentAlignment.MiddleLeft
-        btnAjustes.UseVisualStyleBackColor = True
-        ' 
-        ' btnHistorial
-        ' 
-        btnHistorial.Dock = DockStyle.Top
-        btnHistorial.FlatAppearance.BorderColor = Color.White
-        btnHistorial.FlatStyle = FlatStyle.Flat
-        btnHistorial.Font = New Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        btnHistorial.Location = New Point(0, 314)
-        btnHistorial.Name = "btnHistorial"
-        btnHistorial.Size = New Size(189, 62)
-        btnHistorial.TabIndex = 5
-        btnHistorial.Text = "Historial"
-        btnHistorial.TextAlign = ContentAlignment.MiddleLeft
-        btnHistorial.UseVisualStyleBackColor = True
-        ' 
-        ' btnReservas
-        ' 
-        btnReservas.Dock = DockStyle.Top
-        btnReservas.FlatAppearance.BorderColor = Color.White
-        btnReservas.FlatStyle = FlatStyle.Flat
-        btnReservas.Font = New Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        btnReservas.Location = New Point(0, 252)
-        btnReservas.Name = "btnReservas"
-        btnReservas.Size = New Size(189, 62)
-        btnReservas.TabIndex = 4
-        btnReservas.Text = "Reservas"
-        btnReservas.TextAlign = ContentAlignment.MiddleLeft
-        btnReservas.UseVisualStyleBackColor = True
-        ' 
-        ' btnBuscar
-        ' 
-        btnBuscar.Dock = DockStyle.Top
-        btnBuscar.FlatAppearance.BorderColor = Color.White
-        btnBuscar.FlatStyle = FlatStyle.Flat
-        btnBuscar.Font = New Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        btnBuscar.Location = New Point(0, 190)
-        btnBuscar.Name = "btnBuscar"
-        btnBuscar.Size = New Size(189, 62)
-        btnBuscar.TabIndex = 3
-        btnBuscar.Text = "Buscar"
-        btnBuscar.TextAlign = ContentAlignment.MiddleLeft
-        btnBuscar.UseVisualStyleBackColor = True
-        ' 
-        ' btnMisLibros
-        ' 
-        btnMisLibros.Dock = DockStyle.Top
-        btnMisLibros.FlatAppearance.BorderColor = Color.White
-        btnMisLibros.FlatStyle = FlatStyle.Flat
-        btnMisLibros.Font = New Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        btnMisLibros.Location = New Point(0, 128)
-        btnMisLibros.Name = "btnMisLibros"
-        btnMisLibros.Size = New Size(189, 62)
-        btnMisLibros.TabIndex = 2
-        btnMisLibros.Text = "Mis libros"
-        btnMisLibros.TextAlign = ContentAlignment.MiddleLeft
-        btnMisLibros.UseVisualStyleBackColor = True
-        ' 
-        ' btnInicio
-        ' 
-        btnInicio.Dock = DockStyle.Top
-        btnInicio.FlatAppearance.BorderColor = Color.White
-        btnInicio.FlatStyle = FlatStyle.Flat
-        btnInicio.Font = New Font("Inter", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
-        btnInicio.Location = New Point(0, 0)
-        btnInicio.Name = "btnInicio"
-        btnInicio.Size = New Size(189, 128)
-        btnInicio.TabIndex = 1
-        btnInicio.Text = "Inicio"
-        btnInicio.TextAlign = ContentAlignment.MiddleLeft
-        btnInicio.UseVisualStyleBackColor = True
-        ' 
-        ' PanelInicio
-        ' 
-        PanelInicio.Controls.Add(btnPersonalizar)
-        PanelInicio.Controls.Add(GroupBox1)
-        PanelInicio.Controls.Add(lblSubBienvenida)
-        PanelInicio.Controls.Add(lblBienvenida)
-        PanelInicio.Dock = DockStyle.Fill
-        PanelInicio.Location = New Point(0, 0)
-        PanelInicio.Name = "PanelInicio"
-        PanelInicio.Size = New Size(901, 654)
-        PanelInicio.TabIndex = 0
-        ' 
-        ' btnPersonalizar
-        ' 
-        btnPersonalizar.Location = New Point(799, 12)
-        btnPersonalizar.Name = "btnPersonalizar"
-        btnPersonalizar.Size = New Size(90, 23)
-        btnPersonalizar.TabIndex = 3
-        btnPersonalizar.Text = "Personalizar"
-        btnPersonalizar.UseVisualStyleBackColor = True
-        ' 
-        ' GroupBox1
-        ' 
-        GroupBox1.Location = New Point(24, 152)
-        GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(825, 460)
-        GroupBox1.TabIndex = 2
-        GroupBox1.TabStop = False
-        GroupBox1.Text = "GroupBox1"
-        ' 
-        ' lblSubBienvenida
-        ' 
-        lblSubBienvenida.AutoSize = True
-        lblSubBienvenida.Font = New Font("Inter", 24F, FontStyle.Regular, GraphicsUnit.Point)
-        lblSubBienvenida.Location = New Point(24, 89)
-        lblSubBienvenida.Margin = New Padding(0)
-        lblSubBienvenida.Name = "lblSubBienvenida"
-        lblSubBienvenida.Size = New Size(443, 39)
-        lblSubBienvenida.TabIndex = 1
-        lblSubBienvenida.Text = "¿Qué te gustaría hacer hoy?"
-        ' 
-        ' lblBienvenida
-        ' 
-        lblBienvenida.AutoSize = True
-        lblBienvenida.Font = New Font("Inter", 36F, FontStyle.Bold, GraphicsUnit.Point)
-        lblBienvenida.Location = New Point(20, 22)
-        lblBienvenida.Name = "lblBienvenida"
-        lblBienvenida.Size = New Size(417, 58)
-        lblBienvenida.TabIndex = 1
-        lblBienvenida.Text = "Bienvenido, user"
-        ' 
-        ' Index
-        ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
-        AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.White
-        ClientSize = New Size(1094, 654)
-        Controls.Add(spcContenedorProgram)
-        Name = "Index"
-        Text = "Index"
-        spcContenedorProgram.Panel1.ResumeLayout(False)
-        spcContenedorProgram.Panel2.ResumeLayout(False)
-        CType(spcContenedorProgram, ComponentModel.ISupportInitialize).EndInit()
-        spcContenedorProgram.ResumeLayout(False)
-        PanelInicio.ResumeLayout(False)
-        PanelInicio.PerformLayout()
-        ResumeLayout(False)
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Index))
+        Me.spcContenedorProgram = New System.Windows.Forms.SplitContainer()
+        Me.btnCerrarSesion = New System.Windows.Forms.Button()
+        Me.btnAcercaDe = New System.Windows.Forms.Button()
+        Me.btnAyuda = New System.Windows.Forms.Button()
+        Me.btnAjustes = New System.Windows.Forms.Button()
+        Me.btnHistorial = New System.Windows.Forms.Button()
+        Me.btnReservas = New System.Windows.Forms.Button()
+        Me.btnBuscar = New System.Windows.Forms.Button()
+        Me.btnMisLibros = New System.Windows.Forms.Button()
+        Me.btnInicio = New System.Windows.Forms.Button()
+        Me.PanelInicio = New System.Windows.Forms.Panel()
+        Me.btnPersonalizar = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lblSubBienvenida = New System.Windows.Forms.Label()
+        Me.lblBienvenida = New System.Windows.Forms.Label()
+        CType(Me.spcContenedorProgram, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.spcContenedorProgram.Panel1.SuspendLayout()
+        Me.spcContenedorProgram.Panel2.SuspendLayout()
+        Me.spcContenedorProgram.SuspendLayout()
+        Me.PanelInicio.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'spcContenedorProgram
+        '
+        Me.spcContenedorProgram.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.spcContenedorProgram.Location = New System.Drawing.Point(0, 0)
+        Me.spcContenedorProgram.Name = "spcContenedorProgram"
+        '
+        'spcContenedorProgram.Panel1
+        '
+        Me.spcContenedorProgram.Panel1.Controls.Add(Me.btnCerrarSesion)
+        Me.spcContenedorProgram.Panel1.Controls.Add(Me.btnAcercaDe)
+        Me.spcContenedorProgram.Panel1.Controls.Add(Me.btnAyuda)
+        Me.spcContenedorProgram.Panel1.Controls.Add(Me.btnAjustes)
+        Me.spcContenedorProgram.Panel1.Controls.Add(Me.btnHistorial)
+        Me.spcContenedorProgram.Panel1.Controls.Add(Me.btnReservas)
+        Me.spcContenedorProgram.Panel1.Controls.Add(Me.btnBuscar)
+        Me.spcContenedorProgram.Panel1.Controls.Add(Me.btnMisLibros)
+        Me.spcContenedorProgram.Panel1.Controls.Add(Me.btnInicio)
+        '
+        'spcContenedorProgram.Panel2
+        '
+        Me.spcContenedorProgram.Panel2.Controls.Add(Me.PanelInicio)
+        Me.spcContenedorProgram.Size = New System.Drawing.Size(1094, 654)
+        Me.spcContenedorProgram.SplitterDistance = 189
+        Me.spcContenedorProgram.TabIndex = 1
+        '
+        'btnCerrarSesion
+        '
+        Me.btnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnCerrarSesion.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCerrarSesion.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnCerrarSesion.Location = New System.Drawing.Point(0, 562)
+        Me.btnCerrarSesion.Name = "btnCerrarSesion"
+        Me.btnCerrarSesion.Size = New System.Drawing.Size(189, 92)
+        Me.btnCerrarSesion.TabIndex = 9
+        Me.btnCerrarSesion.Text = "Cerrar sesión"
+        Me.btnCerrarSesion.UseVisualStyleBackColor = True
+        '
+        'btnAcercaDe
+        '
+        Me.btnAcercaDe.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnAcercaDe.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnAcercaDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAcercaDe.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnAcercaDe.Image = CType(resources.GetObject("btnAcercaDe.Image"), System.Drawing.Image)
+        Me.btnAcercaDe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAcercaDe.Location = New System.Drawing.Point(0, 500)
+        Me.btnAcercaDe.Name = "btnAcercaDe"
+        Me.btnAcercaDe.Size = New System.Drawing.Size(189, 62)
+        Me.btnAcercaDe.TabIndex = 8
+        Me.btnAcercaDe.Text = "Acerca de"
+        Me.btnAcercaDe.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnAcercaDe.UseVisualStyleBackColor = True
+        '
+        'btnAyuda
+        '
+        Me.btnAyuda.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnAyuda.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAyuda.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnAyuda.Image = CType(resources.GetObject("btnAyuda.Image"), System.Drawing.Image)
+        Me.btnAyuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAyuda.Location = New System.Drawing.Point(0, 438)
+        Me.btnAyuda.Name = "btnAyuda"
+        Me.btnAyuda.Size = New System.Drawing.Size(189, 62)
+        Me.btnAyuda.TabIndex = 7
+        Me.btnAyuda.Text = "Ayuda"
+        Me.btnAyuda.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnAyuda.UseVisualStyleBackColor = True
+        '
+        'btnAjustes
+        '
+        Me.btnAjustes.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnAjustes.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnAjustes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAjustes.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnAjustes.Image = CType(resources.GetObject("btnAjustes.Image"), System.Drawing.Image)
+        Me.btnAjustes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAjustes.Location = New System.Drawing.Point(0, 376)
+        Me.btnAjustes.Name = "btnAjustes"
+        Me.btnAjustes.Size = New System.Drawing.Size(189, 62)
+        Me.btnAjustes.TabIndex = 6
+        Me.btnAjustes.Text = "Ajustes"
+        Me.btnAjustes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnAjustes.UseVisualStyleBackColor = True
+        '
+        'btnHistorial
+        '
+        Me.btnHistorial.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnHistorial.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHistorial.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnHistorial.Image = CType(resources.GetObject("btnHistorial.Image"), System.Drawing.Image)
+        Me.btnHistorial.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnHistorial.Location = New System.Drawing.Point(0, 314)
+        Me.btnHistorial.Name = "btnHistorial"
+        Me.btnHistorial.Size = New System.Drawing.Size(189, 62)
+        Me.btnHistorial.TabIndex = 5
+        Me.btnHistorial.Text = "Historial"
+        Me.btnHistorial.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnHistorial.UseVisualStyleBackColor = True
+        '
+        'btnReservas
+        '
+        Me.btnReservas.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnReservas.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnReservas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnReservas.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnReservas.Image = CType(resources.GetObject("btnReservas.Image"), System.Drawing.Image)
+        Me.btnReservas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnReservas.Location = New System.Drawing.Point(0, 252)
+        Me.btnReservas.Name = "btnReservas"
+        Me.btnReservas.Size = New System.Drawing.Size(189, 62)
+        Me.btnReservas.TabIndex = 4
+        Me.btnReservas.Text = "Reservas"
+        Me.btnReservas.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnReservas.UseVisualStyleBackColor = True
+        '
+        'btnBuscar
+        '
+        Me.btnBuscar.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnBuscar.Image = CType(resources.GetObject("btnBuscar.Image"), System.Drawing.Image)
+        Me.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnBuscar.Location = New System.Drawing.Point(0, 190)
+        Me.btnBuscar.Name = "btnBuscar"
+        Me.btnBuscar.Size = New System.Drawing.Size(189, 62)
+        Me.btnBuscar.TabIndex = 3
+        Me.btnBuscar.Text = "Buscar"
+        Me.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnBuscar.UseVisualStyleBackColor = True
+        '
+        'btnMisLibros
+        '
+        Me.btnMisLibros.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnMisLibros.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnMisLibros.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMisLibros.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnMisLibros.Image = CType(resources.GetObject("btnMisLibros.Image"), System.Drawing.Image)
+        Me.btnMisLibros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnMisLibros.Location = New System.Drawing.Point(0, 128)
+        Me.btnMisLibros.Name = "btnMisLibros"
+        Me.btnMisLibros.Size = New System.Drawing.Size(189, 62)
+        Me.btnMisLibros.TabIndex = 2
+        Me.btnMisLibros.Text = "Mis libros"
+        Me.btnMisLibros.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnMisLibros.UseVisualStyleBackColor = True
+        '
+        'btnInicio
+        '
+        Me.btnInicio.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnInicio.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnInicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnInicio.Image = CType(resources.GetObject("btnInicio.Image"), System.Drawing.Image)
+        Me.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnInicio.Location = New System.Drawing.Point(0, 0)
+        Me.btnInicio.Name = "btnInicio"
+        Me.btnInicio.Size = New System.Drawing.Size(189, 128)
+        Me.btnInicio.TabIndex = 1
+        Me.btnInicio.Text = "Inicio"
+        Me.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnInicio.UseVisualStyleBackColor = True
+        '
+        'PanelInicio
+        '
+        Me.PanelInicio.Controls.Add(Me.btnPersonalizar)
+        Me.PanelInicio.Controls.Add(Me.GroupBox1)
+        Me.PanelInicio.Controls.Add(Me.lblSubBienvenida)
+        Me.PanelInicio.Controls.Add(Me.lblBienvenida)
+        Me.PanelInicio.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelInicio.Location = New System.Drawing.Point(0, 0)
+        Me.PanelInicio.Name = "PanelInicio"
+        Me.PanelInicio.Size = New System.Drawing.Size(901, 654)
+        Me.PanelInicio.TabIndex = 0
+        '
+        'btnPersonalizar
+        '
+        Me.btnPersonalizar.Location = New System.Drawing.Point(799, 12)
+        Me.btnPersonalizar.Name = "btnPersonalizar"
+        Me.btnPersonalizar.Size = New System.Drawing.Size(90, 23)
+        Me.btnPersonalizar.TabIndex = 3
+        Me.btnPersonalizar.Text = "Personalizar"
+        Me.btnPersonalizar.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Location = New System.Drawing.Point(24, 152)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(825, 460)
+        Me.GroupBox1.TabIndex = 2
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "GroupBox1"
+        '
+        'lblSubBienvenida
+        '
+        Me.lblSubBienvenida.AutoSize = True
+        Me.lblSubBienvenida.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblSubBienvenida.Location = New System.Drawing.Point(24, 89)
+        Me.lblSubBienvenida.Margin = New System.Windows.Forms.Padding(0)
+        Me.lblSubBienvenida.Name = "lblSubBienvenida"
+        Me.lblSubBienvenida.Size = New System.Drawing.Size(419, 37)
+        Me.lblSubBienvenida.TabIndex = 1
+        Me.lblSubBienvenida.Text = "¿Qué te gustaría hacer hoy?"
+        '
+        'lblBienvenida
+        '
+        Me.lblBienvenida.AutoSize = True
+        Me.lblBienvenida.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblBienvenida.Location = New System.Drawing.Point(20, 22)
+        Me.lblBienvenida.Name = "lblBienvenida"
+        Me.lblBienvenida.Size = New System.Drawing.Size(398, 55)
+        Me.lblBienvenida.TabIndex = 1
+        Me.lblBienvenida.Text = "Bienvenido, user"
+        '
+        'Index
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(1094, 654)
+        Me.Controls.Add(Me.spcContenedorProgram)
+        Me.Name = "Index"
+        Me.Text = "Index"
+        Me.spcContenedorProgram.Panel1.ResumeLayout(False)
+        Me.spcContenedorProgram.Panel2.ResumeLayout(False)
+        CType(Me.spcContenedorProgram, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.spcContenedorProgram.ResumeLayout(False)
+        Me.PanelInicio.ResumeLayout(False)
+        Me.PanelInicio.PerformLayout()
+        Me.ResumeLayout(False)
+
     End Sub
 
     Friend WithEvents spcContenedorProgram As SplitContainer
