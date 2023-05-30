@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Index
+Partial Class frmIndex
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,7 +22,7 @@ Partial Class Index
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Index))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmIndex))
         Me.spcContenedorProgram = New System.Windows.Forms.SplitContainer()
         Me.btnCerrarSesion = New System.Windows.Forms.Button()
         Me.btnAcercaDe = New System.Windows.Forms.Button()
@@ -35,7 +35,6 @@ Partial Class Index
         Me.btnInicio = New System.Windows.Forms.Button()
         Me.PanelInicio = New System.Windows.Forms.Panel()
         Me.btnPersonalizar = New System.Windows.Forms.Button()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lblSubBienvenida = New System.Windows.Forms.Label()
         Me.lblBienvenida = New System.Windows.Forms.Label()
         CType(Me.spcContenedorProgram, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -75,7 +74,7 @@ Partial Class Index
         Me.btnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnCerrarSesion.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCerrarSesion.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnCerrarSesion.Font = New System.Drawing.Font("Inter", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btnCerrarSesion.Location = New System.Drawing.Point(0, 562)
         Me.btnCerrarSesion.Name = "btnCerrarSesion"
         Me.btnCerrarSesion.Size = New System.Drawing.Size(189, 92)
@@ -88,7 +87,7 @@ Partial Class Index
         Me.btnAcercaDe.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnAcercaDe.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnAcercaDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAcercaDe.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnAcercaDe.Font = New System.Drawing.Font("Inter", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnAcercaDe.Image = CType(resources.GetObject("btnAcercaDe.Image"), System.Drawing.Image)
         Me.btnAcercaDe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnAcercaDe.Location = New System.Drawing.Point(0, 500)
@@ -104,7 +103,7 @@ Partial Class Index
         Me.btnAyuda.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnAyuda.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAyuda.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnAyuda.Font = New System.Drawing.Font("Inter", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnAyuda.Image = CType(resources.GetObject("btnAyuda.Image"), System.Drawing.Image)
         Me.btnAyuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnAyuda.Location = New System.Drawing.Point(0, 438)
@@ -120,7 +119,7 @@ Partial Class Index
         Me.btnAjustes.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnAjustes.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnAjustes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAjustes.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnAjustes.Font = New System.Drawing.Font("Inter", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnAjustes.Image = CType(resources.GetObject("btnAjustes.Image"), System.Drawing.Image)
         Me.btnAjustes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnAjustes.Location = New System.Drawing.Point(0, 376)
@@ -136,7 +135,7 @@ Partial Class Index
         Me.btnHistorial.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnHistorial.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHistorial.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnHistorial.Font = New System.Drawing.Font("Inter", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnHistorial.Image = CType(resources.GetObject("btnHistorial.Image"), System.Drawing.Image)
         Me.btnHistorial.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnHistorial.Location = New System.Drawing.Point(0, 314)
@@ -152,7 +151,7 @@ Partial Class Index
         Me.btnReservas.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnReservas.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnReservas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReservas.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnReservas.Font = New System.Drawing.Font("Inter", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnReservas.Image = CType(resources.GetObject("btnReservas.Image"), System.Drawing.Image)
         Me.btnReservas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnReservas.Location = New System.Drawing.Point(0, 252)
@@ -168,7 +167,7 @@ Partial Class Index
         Me.btnBuscar.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnBuscar.Font = New System.Drawing.Font("Inter", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnBuscar.Image = CType(resources.GetObject("btnBuscar.Image"), System.Drawing.Image)
         Me.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnBuscar.Location = New System.Drawing.Point(0, 190)
@@ -184,7 +183,7 @@ Partial Class Index
         Me.btnMisLibros.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnMisLibros.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnMisLibros.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMisLibros.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnMisLibros.Font = New System.Drawing.Font("Inter", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnMisLibros.Image = CType(resources.GetObject("btnMisLibros.Image"), System.Drawing.Image)
         Me.btnMisLibros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnMisLibros.Location = New System.Drawing.Point(0, 128)
@@ -200,7 +199,7 @@ Partial Class Index
         Me.btnInicio.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnInicio.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnInicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnInicio.Font = New System.Drawing.Font("Inter", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btnInicio.Image = CType(resources.GetObject("btnInicio.Image"), System.Drawing.Image)
         Me.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnInicio.Location = New System.Drawing.Point(0, 0)
@@ -214,7 +213,6 @@ Partial Class Index
         'PanelInicio
         '
         Me.PanelInicio.Controls.Add(Me.btnPersonalizar)
-        Me.PanelInicio.Controls.Add(Me.GroupBox1)
         Me.PanelInicio.Controls.Add(Me.lblSubBienvenida)
         Me.PanelInicio.Controls.Add(Me.lblBienvenida)
         Me.PanelInicio.Dock = System.Windows.Forms.DockStyle.Fill
@@ -232,45 +230,39 @@ Partial Class Index
         Me.btnPersonalizar.Text = "Personalizar"
         Me.btnPersonalizar.UseVisualStyleBackColor = True
         '
-        'GroupBox1
-        '
-        Me.GroupBox1.Location = New System.Drawing.Point(24, 152)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(825, 460)
-        Me.GroupBox1.TabIndex = 2
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
-        '
         'lblSubBienvenida
         '
         Me.lblSubBienvenida.AutoSize = True
-        Me.lblSubBienvenida.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblSubBienvenida.Font = New System.Drawing.Font("Inter", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblSubBienvenida.Location = New System.Drawing.Point(24, 89)
         Me.lblSubBienvenida.Margin = New System.Windows.Forms.Padding(0)
         Me.lblSubBienvenida.Name = "lblSubBienvenida"
-        Me.lblSubBienvenida.Size = New System.Drawing.Size(419, 37)
+        Me.lblSubBienvenida.Size = New System.Drawing.Size(443, 39)
         Me.lblSubBienvenida.TabIndex = 1
         Me.lblSubBienvenida.Text = "¿Qué te gustaría hacer hoy?"
         '
         'lblBienvenida
         '
         Me.lblBienvenida.AutoSize = True
-        Me.lblBienvenida.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblBienvenida.Font = New System.Drawing.Font("Inter", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.lblBienvenida.Location = New System.Drawing.Point(20, 22)
         Me.lblBienvenida.Name = "lblBienvenida"
-        Me.lblBienvenida.Size = New System.Drawing.Size(398, 55)
+        Me.lblBienvenida.Size = New System.Drawing.Size(417, 58)
         Me.lblBienvenida.TabIndex = 1
         Me.lblBienvenida.Text = "Bienvenido, user"
         '
-        'Index
+        'frmIndex
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1094, 654)
         Me.Controls.Add(Me.spcContenedorProgram)
-        Me.Name = "Index"
-        Me.Text = "Index"
+        Me.Font = New System.Drawing.Font("Inter", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.MaximizeBox = False
+        Me.Name = "frmIndex"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Inicio: Biblioteca Virtual"
         Me.spcContenedorProgram.Panel1.ResumeLayout(False)
         Me.spcContenedorProgram.Panel2.ResumeLayout(False)
         CType(Me.spcContenedorProgram, System.ComponentModel.ISupportInitialize).EndInit()
@@ -293,7 +285,6 @@ Partial Class Index
     Friend WithEvents btnBuscar As Button
     Friend WithEvents btnMisLibros As Button
     Friend WithEvents btnInicio As Button
-    Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents lblSubBienvenida As Label
     Friend WithEvents btnPersonalizar As Button
 End Class
