@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmIndex
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmIndex
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmIndex))
         Me.spcContenedorProgram = New System.Windows.Forms.SplitContainer()
@@ -33,7 +33,7 @@ Partial Class frmIndex
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.btnMisLibros = New System.Windows.Forms.Button()
         Me.btnInicio = New System.Windows.Forms.Button()
-        Me.PanelInicio = New System.Windows.Forms.Panel()
+        Me.PanelActividades = New System.Windows.Forms.Panel()
         Me.btnPersonalizar = New System.Windows.Forms.Button()
         Me.lblSubBienvenida = New System.Windows.Forms.Label()
         Me.lblBienvenida = New System.Windows.Forms.Label()
@@ -41,7 +41,6 @@ Partial Class frmIndex
         Me.spcContenedorProgram.Panel1.SuspendLayout()
         Me.spcContenedorProgram.Panel2.SuspendLayout()
         Me.spcContenedorProgram.SuspendLayout()
-        Me.PanelInicio.SuspendLayout()
         Me.SuspendLayout()
         '
         'spcContenedorProgram
@@ -64,7 +63,10 @@ Partial Class frmIndex
         '
         'spcContenedorProgram.Panel2
         '
-        Me.spcContenedorProgram.Panel2.Controls.Add(Me.PanelInicio)
+        Me.spcContenedorProgram.Panel2.Controls.Add(Me.PanelActividades)
+        Me.spcContenedorProgram.Panel2.Controls.Add(Me.btnPersonalizar)
+        Me.spcContenedorProgram.Panel2.Controls.Add(Me.lblSubBienvenida)
+        Me.spcContenedorProgram.Panel2.Controls.Add(Me.lblBienvenida)
         Me.spcContenedorProgram.Size = New System.Drawing.Size(1094, 654)
         Me.spcContenedorProgram.SplitterDistance = 189
         Me.spcContenedorProgram.TabIndex = 1
@@ -74,7 +76,7 @@ Partial Class frmIndex
         Me.btnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnCerrarSesion.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCerrarSesion.Font = New System.Drawing.Font("Inter", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnCerrarSesion.Font = New System.Drawing.Font("Inter", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnCerrarSesion.Location = New System.Drawing.Point(0, 562)
         Me.btnCerrarSesion.Name = "btnCerrarSesion"
         Me.btnCerrarSesion.Size = New System.Drawing.Size(189, 92)
@@ -199,7 +201,7 @@ Partial Class frmIndex
         Me.btnInicio.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnInicio.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnInicio.Font = New System.Drawing.Font("Inter", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnInicio.Font = New System.Drawing.Font("Inter", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnInicio.Image = CType(resources.GetObject("btnInicio.Image"), System.Drawing.Image)
         Me.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnInicio.Location = New System.Drawing.Point(0, 0)
@@ -210,23 +212,19 @@ Partial Class frmIndex
         Me.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnInicio.UseVisualStyleBackColor = True
         '
-        'PanelInicio
+        'PanelActividades
         '
-        Me.PanelInicio.Controls.Add(Me.btnPersonalizar)
-        Me.PanelInicio.Controls.Add(Me.lblSubBienvenida)
-        Me.PanelInicio.Controls.Add(Me.lblBienvenida)
-        Me.PanelInicio.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelInicio.Location = New System.Drawing.Point(0, 0)
-        Me.PanelInicio.Name = "PanelInicio"
-        Me.PanelInicio.Size = New System.Drawing.Size(901, 654)
-        Me.PanelInicio.TabIndex = 0
+        Me.PanelActividades.Location = New System.Drawing.Point(26, 162)
+        Me.PanelActividades.Name = "PanelActividades"
+        Me.PanelActividades.Size = New System.Drawing.Size(846, 480)
+        Me.PanelActividades.TabIndex = 7
         '
         'btnPersonalizar
         '
-        Me.btnPersonalizar.Location = New System.Drawing.Point(799, 12)
+        Me.btnPersonalizar.Location = New System.Drawing.Point(801, 18)
         Me.btnPersonalizar.Name = "btnPersonalizar"
         Me.btnPersonalizar.Size = New System.Drawing.Size(90, 23)
-        Me.btnPersonalizar.TabIndex = 3
+        Me.btnPersonalizar.TabIndex = 6
         Me.btnPersonalizar.Text = "Personalizar"
         Me.btnPersonalizar.UseVisualStyleBackColor = True
         '
@@ -234,21 +232,21 @@ Partial Class frmIndex
         '
         Me.lblSubBienvenida.AutoSize = True
         Me.lblSubBienvenida.Font = New System.Drawing.Font("Inter", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblSubBienvenida.Location = New System.Drawing.Point(24, 89)
+        Me.lblSubBienvenida.Location = New System.Drawing.Point(26, 95)
         Me.lblSubBienvenida.Margin = New System.Windows.Forms.Padding(0)
         Me.lblSubBienvenida.Name = "lblSubBienvenida"
         Me.lblSubBienvenida.Size = New System.Drawing.Size(443, 39)
-        Me.lblSubBienvenida.TabIndex = 1
+        Me.lblSubBienvenida.TabIndex = 4
         Me.lblSubBienvenida.Text = "¿Qué te gustaría hacer hoy?"
         '
         'lblBienvenida
         '
         Me.lblBienvenida.AutoSize = True
-        Me.lblBienvenida.Font = New System.Drawing.Font("Inter", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblBienvenida.Location = New System.Drawing.Point(20, 22)
+        Me.lblBienvenida.Font = New System.Drawing.Font("Inter", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblBienvenida.Location = New System.Drawing.Point(22, 28)
         Me.lblBienvenida.Name = "lblBienvenida"
-        Me.lblBienvenida.Size = New System.Drawing.Size(417, 58)
-        Me.lblBienvenida.TabIndex = 1
+        Me.lblBienvenida.Size = New System.Drawing.Size(400, 58)
+        Me.lblBienvenida.TabIndex = 5
         Me.lblBienvenida.Text = "Bienvenido, user"
         '
         'frmIndex
@@ -265,17 +263,14 @@ Partial Class frmIndex
         Me.Text = "Inicio: Biblioteca Virtual"
         Me.spcContenedorProgram.Panel1.ResumeLayout(False)
         Me.spcContenedorProgram.Panel2.ResumeLayout(False)
+        Me.spcContenedorProgram.Panel2.PerformLayout()
         CType(Me.spcContenedorProgram, System.ComponentModel.ISupportInitialize).EndInit()
         Me.spcContenedorProgram.ResumeLayout(False)
-        Me.PanelInicio.ResumeLayout(False)
-        Me.PanelInicio.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents spcContenedorProgram As SplitContainer
-    Friend WithEvents PanelInicio As Panel
-    Friend WithEvents lblBienvenida As Label
     Friend WithEvents btnCerrarSesion As Button
     Friend WithEvents btnAcercaDe As Button
     Friend WithEvents btnAyuda As Button
@@ -285,6 +280,8 @@ Partial Class frmIndex
     Friend WithEvents btnBuscar As Button
     Friend WithEvents btnMisLibros As Button
     Friend WithEvents btnInicio As Button
-    Friend WithEvents lblSubBienvenida As Label
     Friend WithEvents btnPersonalizar As Button
+    Friend WithEvents lblSubBienvenida As Label
+    Friend WithEvents lblBienvenida As Label
+    Friend WithEvents PanelActividades As Panel
 End Class

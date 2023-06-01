@@ -1,5 +1,6 @@
 ﻿Module MDarkMode
-    Public Sub ApplyDarkMode(f As Form, isDarkModeOn As Boolean)
+    Public Sub ApplyDarkMode(form As Form, isDarkModeOn As Boolean)
+        ' Aplicar el modo oscuro a un formulario y sus controles
         Dim backgroundColor As Color
         Dim foregroundColor As Color
 
@@ -11,10 +12,11 @@
             foregroundColor = Color.Black
         End If
 
-        ApplyDarkModeOnControl(f, backgroundColor, foregroundColor)
+        ApplyDarkModeOnControl(form, backgroundColor, foregroundColor)
     End Sub
 
     Private Sub ApplyDarkModeOnControl(control As Control, backgroundColor As Color, foregroundColor As Color)
+        ' Aplicar el modo oscuro a un control y sus controles secundarios
         control.BackColor = backgroundColor
         control.ForeColor = foregroundColor
 
