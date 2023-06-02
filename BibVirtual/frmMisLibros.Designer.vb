@@ -50,9 +50,10 @@ Partial Class frmMisLibros
         Label15 = New Label()
         PictureBox5 = New PictureBox()
         GroupBox4 = New GroupBox()
-        Label10 = New Label()
-        Label11 = New Label()
-        Label12 = New Label()
+        Button1 = New Button()
+        Button2 = New Button()
+        GroupBox7 = New GroupBox()
+        LinkLabel1 = New LinkLabel()
         PictureBox4 = New PictureBox()
         FlowLayoutPanel1.SuspendLayout()
         GroupBox1.SuspendLayout()
@@ -66,6 +67,7 @@ Partial Class frmMisLibros
         GroupBox5.SuspendLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox4.SuspendLayout()
+        GroupBox7.SuspendLayout()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -76,6 +78,7 @@ Partial Class frmMisLibros
         FlowLayoutPanel1.Controls.Add(GroupBox3)
         FlowLayoutPanel1.Controls.Add(GroupBox6)
         FlowLayoutPanel1.Controls.Add(GroupBox5)
+        FlowLayoutPanel1.Controls.Add(GroupBox7)
         FlowLayoutPanel1.Controls.Add(GroupBox4)
         FlowLayoutPanel1.Dock = DockStyle.Fill
         FlowLayoutPanel1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
@@ -148,29 +151,29 @@ Partial Class frmMisLibros
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(105, 88)
+        Label4.Location = New Point(105, 108)
         Label4.Name = "Label4"
         Label4.Size = New Size(46, 21)
         Label4.TabIndex = 3
-        Label4.Text = "1988"
+        Label4.Text = "1943"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.Location = New Point(105, 51)
         Label5.Name = "Label5"
-        Label5.Size = New Size(101, 21)
+        Label5.Size = New Size(106, 42)
         Label5.TabIndex = 2
-        Label5.Text = "Paulo Coehlo"
+        Label5.Text = "Antoine de " & vbCrLf & "Saint-Exupéry"
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
         Label6.Location = New Point(105, 17)
         Label6.Name = "Label6"
-        Label6.Size = New Size(98, 21)
+        Label6.Size = New Size(92, 21)
         Label6.TabIndex = 1
-        Label6.Text = "El alquimista"
+        Label6.Text = "El Principito" & vbCrLf
         ' 
         ' PictureBox2
         ' 
@@ -201,25 +204,25 @@ Partial Class frmMisLibros
         Label7.Name = "Label7"
         Label7.Size = New Size(46, 21)
         Label7.TabIndex = 3
-        Label7.Text = "1988"
+        Label7.Text = "1950"
         ' 
         ' Label8
         ' 
         Label8.AutoSize = True
         Label8.Location = New Point(105, 51)
         Label8.Name = "Label8"
-        Label8.Size = New Size(101, 21)
+        Label8.Size = New Size(100, 21)
         Label8.TabIndex = 2
-        Label8.Text = "Paulo Coehlo"
+        Label8.Text = "Isaac Asimov"
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
         Label9.Location = New Point(105, 17)
         Label9.Name = "Label9"
-        Label9.Size = New Size(98, 21)
+        Label9.Size = New Size(76, 21)
         Label9.TabIndex = 1
-        Label9.Text = "El alquimista"
+        Label9.Text = "Yo, Robot"
         ' 
         ' PictureBox3
         ' 
@@ -239,7 +242,7 @@ Partial Class frmMisLibros
         GroupBox6.Controls.Add(PictureBox6)
         GroupBox6.Location = New Point(3, 168)
         GroupBox6.Name = "GroupBox6"
-        GroupBox6.Size = New Size(259, 159)
+        GroupBox6.Size = New Size(268, 159)
         GroupBox6.TabIndex = 4
         GroupBox6.TabStop = False
         ' 
@@ -250,25 +253,25 @@ Partial Class frmMisLibros
         Label16.Name = "Label16"
         Label16.Size = New Size(46, 21)
         Label16.TabIndex = 3
-        Label16.Text = "1988"
+        Label16.Text = "1851"
         ' 
         ' Label17
         ' 
         Label17.AutoSize = True
         Label17.Location = New Point(105, 51)
         Label17.Name = "Label17"
-        Label17.Size = New Size(101, 21)
+        Label17.Size = New Size(159, 21)
         Label17.TabIndex = 2
-        Label17.Text = "Paulo Coehlo"
+        Label17.Text = "Arthur Schopenhauer"
         ' 
         ' Label18
         ' 
         Label18.AutoSize = True
         Label18.Location = New Point(105, 17)
         Label18.Name = "Label18"
-        Label18.Size = New Size(98, 21)
+        Label18.Size = New Size(131, 21)
         Label18.TabIndex = 1
-        Label18.Text = "El alquimista"
+        Label18.Text = "El arte de ser feliz"
         ' 
         ' PictureBox6
         ' 
@@ -286,9 +289,9 @@ Partial Class frmMisLibros
         GroupBox5.Controls.Add(Label14)
         GroupBox5.Controls.Add(Label15)
         GroupBox5.Controls.Add(PictureBox5)
-        GroupBox5.Location = New Point(268, 168)
+        GroupBox5.Location = New Point(277, 168)
         GroupBox5.Name = "GroupBox5"
-        GroupBox5.Size = New Size(259, 159)
+        GroupBox5.Size = New Size(355, 159)
         GroupBox5.TabIndex = 4
         GroupBox5.TabStop = False
         ' 
@@ -299,25 +302,25 @@ Partial Class frmMisLibros
         Label13.Name = "Label13"
         Label13.Size = New Size(46, 21)
         Label13.TabIndex = 3
-        Label13.Text = "1988"
+        Label13.Text = "1967"
         ' 
         ' Label14
         ' 
         Label14.AutoSize = True
         Label14.Location = New Point(105, 51)
         Label14.Name = "Label14"
-        Label14.Size = New Size(101, 21)
+        Label14.Size = New Size(173, 21)
         Label14.TabIndex = 2
-        Label14.Text = "Paulo Coehlo"
+        Label14.Text = "Gabriel García Márquez"
         ' 
         ' Label15
         ' 
         Label15.AutoSize = True
         Label15.Location = New Point(105, 17)
         Label15.Name = "Label15"
-        Label15.Size = New Size(98, 21)
+        Label15.Size = New Size(157, 21)
         Label15.TabIndex = 1
-        Label15.Text = "El alquimista"
+        Label15.Text = "Cien años de soledad"
         ' 
         ' PictureBox5
         ' 
@@ -331,51 +334,68 @@ Partial Class frmMisLibros
         ' 
         ' GroupBox4
         ' 
-        GroupBox4.Controls.Add(Label10)
-        GroupBox4.Controls.Add(Label11)
-        GroupBox4.Controls.Add(Label12)
-        GroupBox4.Controls.Add(PictureBox4)
-        GroupBox4.Location = New Point(533, 168)
+        GroupBox4.Controls.Add(Button2)
+        GroupBox4.Controls.Add(Button1)
+        GroupBox4.Location = New Point(3, 333)
         GroupBox4.Name = "GroupBox4"
-        GroupBox4.Size = New Size(259, 159)
-        GroupBox4.TabIndex = 4
+        GroupBox4.Size = New Size(785, 100)
+        GroupBox4.TabIndex = 6
         GroupBox4.TabStop = False
         ' 
-        ' Label10
+        ' Button1
         ' 
-        Label10.AutoSize = True
-        Label10.Location = New Point(105, 88)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(46, 21)
-        Label10.TabIndex = 3
-        Label10.Text = "1988"
+        Button1.Image = CType(resources.GetObject("Button1.Image"), Image)
+        Button1.ImageAlign = ContentAlignment.MiddleLeft
+        Button1.Location = New Point(239, 34)
+        Button1.Name = "Button1"
+        Button1.Padding = New Padding(5)
+        Button1.Size = New Size(177, 48)
+        Button1.TabIndex = 0
+        Button1.Text = "Eliminar un libro"
+        Button1.TextAlign = ContentAlignment.MiddleRight
+        Button1.UseVisualStyleBackColor = True
         ' 
-        ' Label11
+        ' Button2
         ' 
-        Label11.AutoSize = True
-        Label11.Location = New Point(105, 51)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(101, 21)
-        Label11.TabIndex = 2
-        Label11.Text = "Paulo Coehlo"
+        Button2.Image = CType(resources.GetObject("Button2.Image"), Image)
+        Button2.ImageAlign = ContentAlignment.MiddleLeft
+        Button2.Location = New Point(430, 34)
+        Button2.Name = "Button2"
+        Button2.Padding = New Padding(5)
+        Button2.Size = New Size(115, 48)
+        Button2.TabIndex = 1
+        Button2.Text = "Ayuda"
+        Button2.TextAlign = ContentAlignment.MiddleRight
+        Button2.UseVisualStyleBackColor = True
         ' 
-        ' Label12
+        ' GroupBox7
         ' 
-        Label12.AutoSize = True
-        Label12.Location = New Point(105, 17)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(98, 21)
-        Label12.TabIndex = 1
-        Label12.Text = "El alquimista"
+        GroupBox7.Controls.Add(PictureBox4)
+        GroupBox7.Controls.Add(LinkLabel1)
+        GroupBox7.Location = New Point(638, 168)
+        GroupBox7.Name = "GroupBox7"
+        GroupBox7.Size = New Size(151, 159)
+        GroupBox7.TabIndex = 7
+        GroupBox7.TabStop = False
+        ' 
+        ' LinkLabel1
+        ' 
+        LinkLabel1.AutoSize = True
+        LinkLabel1.Location = New Point(21, 35)
+        LinkLabel1.Name = "LinkLabel1"
+        LinkLabel1.Size = New Size(109, 21)
+        LinkLabel1.TabIndex = 0
+        LinkLabel1.TabStop = True
+        LinkLabel1.Text = "Ver más libros"
         ' 
         ' PictureBox4
         ' 
         PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
-        PictureBox4.Location = New Point(9, 17)
+        PictureBox4.Location = New Point(50, 88)
         PictureBox4.Name = "PictureBox4"
-        PictureBox4.Size = New Size(90, 133)
+        PictureBox4.Size = New Size(51, 50)
         PictureBox4.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox4.TabIndex = 0
+        PictureBox4.TabIndex = 1
         PictureBox4.TabStop = False
         ' 
         ' frmMisLibros
@@ -404,7 +424,8 @@ Partial Class frmMisLibros
         GroupBox5.PerformLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         GroupBox4.ResumeLayout(False)
-        GroupBox4.PerformLayout()
+        GroupBox7.ResumeLayout(False)
+        GroupBox7.PerformLayout()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
@@ -435,9 +456,10 @@ Partial Class frmMisLibros
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
+    Friend WithEvents GroupBox7 As GroupBox
     Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
 End Class
