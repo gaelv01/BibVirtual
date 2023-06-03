@@ -20,6 +20,8 @@
         InitializeFormComponents()
         ' Aplicar el modo oscuro según la preferencia almacenada
         ApplyDarkMode()
+        OpenFormInPanel(frmRecents)
+        lblBienvenida.Text = "¡Hola, usuario!"
     End Sub
 
     Private Sub InitializeFormComponents()
@@ -47,16 +49,16 @@
         MDarkMode.ApplyDarkMode(Me, MPreferences.toggleOnDarkMode)
     End Sub
 
-    Private Sub OpenFormInPanel(FormChild As Object)
+    Private Sub OpenFormInPanel(FormChild As Form)
         ' Abrir un formulario secundario en el panel de actividades
-        Dim frm As Form = FormChild
-        frm.TopLevel = False
-        frm.Dock = DockStyle.Fill
-        PanelActividades.Controls.Add(frm)
-        PanelActividades.Tag = frm
-        MDarkMode.ApplyDarkMode(frm, MPreferences.toggleOnDarkMode)
-        frm.Show()
+        FormChild.TopLevel = False
+        FormChild.Dock = DockStyle.Fill
+        PanelActividades.Controls.Add(FormChild)
+        PanelActividades.Tag = FormChild
+        MDarkMode.ApplyDarkMode(FormChild, MPreferences.toggleOnDarkMode)
+        FormChild.Show()
     End Sub
+
 
     Private Sub ChangeTitleAndSubtitle(title As String, subtitle As String)
         ' Cambiar el título y el subtítulo del formulario
@@ -71,15 +73,62 @@
 
     Private Sub btnMisLibros_Click(sender As Object, e As EventArgs) Handles btnMisLibros.Click
         ' Abrir el formulario "Mis Libros" en el panel de actividades y cambiar el título y subtítulo
+        PanelActividades.Controls.Clear() ' Elimina todos los controles del panel
         OpenFormInPanel(frmMisLibros)
         ChangeTitleAndSubtitle("Mis Libros", "Todos tus libros, en un solo lugar.")
     End Sub
 
     Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
         ' Limpiar el panel de actividades y cambiar el título y subtítulo
-        If PanelActividades.Controls.Count > 0 Then
-            PanelActividades.Controls.RemoveAt(0)
-        End If
+        PanelActividades.Controls.Clear() ' Elimina todos los controles del panel
         ChangeTitleAndSubtitle("Inicio", "¿Qué te gustaría hacer hoy?")
+        OpenFormInPanel(frmRecents)
+    End Sub
+
+    Private Sub btnReservas_Click(sender As Object, e As EventArgs) Handles btnReservas.Click
+        PanelActividades.Controls.Clear()
+        ChangeTitleAndSubtitle("Reservas", "Revisa lo que has estado apartando.")
+        OpenFormInPanel(frmReserves)
+    End Sub
+
+    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
+        PanelActividades.Controls.Clear() ' Elimina todos los controles del panel
+        ChangeTitleAndSubtitle("Buscar", "Iniciemos una búsqueda.")
+        OpenFormInPanel(frmSearch)
+    End Sub
+
+    Private Sub btnHistorial_Click(sender As Object, e As EventArgs) Handles btnHistorial.Click
+        PanelActividades.Controls.Clear() ' Elimina todos los controles del panel
+        ChangeTitleAndSubtitle("Historial", "¿Qué has hecho todo este tiempo?")
+        OpenFormInPanel(frmHistory)
+    End Sub
+
+    Private Sub btnAjustes_Click(sender As Object, e As EventArgs) Handles btnAjustes.Click
+        Dim frmWithoutBorders = New frmPersonalizar
+        frmWithoutBorders.FormBorderStyle = FormBorderStyle.None
+        PanelActividades.Controls.Clear() ' Elimina todos los controles del panel
+        ChangeTitleAndSubtitle("Ajustes (personalización)", "¡Movamos algunos engranajes!")
+        OpenFormInPanel(frmWithoutBorders)
+    End Sub
+
+    Private Sub btnAyuda_Click(sender As Object, e As EventArgs) Handles btnAyuda.Click
+        PanelActividades.Controls.Clear() ' Elimina todos los controles del panel
+        ChangeTitleAndSubtitle("Ayuda", "¿Algo pasó? Pongámonos en marcha.")
+        OpenFormInPanel(frmHelp)
+    End Sub
+
+    Private Sub btnAcercaDe_Click(sender As Object, e As EventArgs) Handles btnAcercaDe.Click
+        PanelActividades.Controls.Clear() ' Elimina todos los controles del panel
+        ChangeTitleAndSubtitle("Acerca de", "Datos importantísimos.")
+        OpenFormInPanel(frmAboutUs)
+    End Sub
+
+    Private Sub btnCerrarSesion_Click(sender As Object, e As EventArgs) Handles btnCerrarSesion.Click
+        Dim dr As DialogResult
+
+        dr = MessageBox.Show("¿Estás seguro que deseas salir?", "¿Salir?", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If dr = DialogResult.Yes Then
+            End
+        End If
     End Sub
 End Class

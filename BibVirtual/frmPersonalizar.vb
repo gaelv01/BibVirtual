@@ -28,6 +28,14 @@
     End Sub
 
     Private Sub frmPersonalizar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Cargar las preferencias y opciones de personalización
+        MDarkMode.ApplyDarkMode(Me, MPreferences.toggleOnDarkMode)
+        MFont.PutOnBoldStyle(Me.Controls.OfType(Of Control).ToArray(), MPreferences.boldStyle)
+        MFont.ChangeFontFamily(Me.Controls.OfType(Of Control).ToArray(), MPreferences.fontFamily)
+
+        cbxModoColor.Text = "Claro"
+        cbxTipografia.Text = "Inter"
+        If MPreferences.boldStyle = True Then
+            chbxNegritas.Checked = True
+        End If
     End Sub
 End Class

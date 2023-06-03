@@ -49,12 +49,13 @@ Partial Class frmMisLibros
         Label14 = New Label()
         Label15 = New Label()
         PictureBox5 = New PictureBox()
-        GroupBox4 = New GroupBox()
-        Button1 = New Button()
-        Button2 = New Button()
         GroupBox7 = New GroupBox()
-        LinkLabel1 = New LinkLabel()
         PictureBox4 = New PictureBox()
+        LinkLabel1 = New LinkLabel()
+        GroupBox4 = New GroupBox()
+        Button2 = New Button()
+        Button1 = New Button()
+        VScrollBar1 = New VScrollBar()
         FlowLayoutPanel1.SuspendLayout()
         GroupBox1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -66,9 +67,9 @@ Partial Class frmMisLibros
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox5.SuspendLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
-        GroupBox4.SuspendLayout()
         GroupBox7.SuspendLayout()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
+        GroupBox4.SuspendLayout()
         SuspendLayout()
         ' 
         ' FlowLayoutPanel1
@@ -332,8 +333,39 @@ Partial Class frmMisLibros
         PictureBox5.TabIndex = 0
         PictureBox5.TabStop = False
         ' 
+        ' GroupBox7
+        ' 
+        GroupBox7.Controls.Add(PictureBox4)
+        GroupBox7.Controls.Add(LinkLabel1)
+        GroupBox7.Location = New Point(638, 168)
+        GroupBox7.Name = "GroupBox7"
+        GroupBox7.Size = New Size(151, 159)
+        GroupBox7.TabIndex = 7
+        GroupBox7.TabStop = False
+        ' 
+        ' PictureBox4
+        ' 
+        PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
+        PictureBox4.Location = New Point(50, 88)
+        PictureBox4.Name = "PictureBox4"
+        PictureBox4.Size = New Size(51, 50)
+        PictureBox4.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox4.TabIndex = 1
+        PictureBox4.TabStop = False
+        ' 
+        ' LinkLabel1
+        ' 
+        LinkLabel1.AutoSize = True
+        LinkLabel1.Location = New Point(21, 35)
+        LinkLabel1.Name = "LinkLabel1"
+        LinkLabel1.Size = New Size(109, 21)
+        LinkLabel1.TabIndex = 0
+        LinkLabel1.TabStop = True
+        LinkLabel1.Text = "Ver más libros"
+        ' 
         ' GroupBox4
         ' 
+        GroupBox4.Controls.Add(VScrollBar1)
         GroupBox4.Controls.Add(Button2)
         GroupBox4.Controls.Add(Button1)
         GroupBox4.Location = New Point(3, 333)
@@ -341,19 +373,6 @@ Partial Class frmMisLibros
         GroupBox4.Size = New Size(785, 100)
         GroupBox4.TabIndex = 6
         GroupBox4.TabStop = False
-        ' 
-        ' Button1
-        ' 
-        Button1.Image = CType(resources.GetObject("Button1.Image"), Image)
-        Button1.ImageAlign = ContentAlignment.MiddleLeft
-        Button1.Location = New Point(239, 34)
-        Button1.Name = "Button1"
-        Button1.Padding = New Padding(5)
-        Button1.Size = New Size(177, 48)
-        Button1.TabIndex = 0
-        Button1.Text = "Eliminar un libro"
-        Button1.TextAlign = ContentAlignment.MiddleRight
-        Button1.UseVisualStyleBackColor = True
         ' 
         ' Button2
         ' 
@@ -368,35 +387,25 @@ Partial Class frmMisLibros
         Button2.TextAlign = ContentAlignment.MiddleRight
         Button2.UseVisualStyleBackColor = True
         ' 
-        ' GroupBox7
+        ' Button1
         ' 
-        GroupBox7.Controls.Add(PictureBox4)
-        GroupBox7.Controls.Add(LinkLabel1)
-        GroupBox7.Location = New Point(638, 168)
-        GroupBox7.Name = "GroupBox7"
-        GroupBox7.Size = New Size(151, 159)
-        GroupBox7.TabIndex = 7
-        GroupBox7.TabStop = False
+        Button1.Image = CType(resources.GetObject("Button1.Image"), Image)
+        Button1.ImageAlign = ContentAlignment.MiddleLeft
+        Button1.Location = New Point(239, 34)
+        Button1.Name = "Button1"
+        Button1.Padding = New Padding(5)
+        Button1.Size = New Size(177, 48)
+        Button1.TabIndex = 0
+        Button1.Text = "Eliminar un libro"
+        Button1.TextAlign = ContentAlignment.MiddleRight
+        Button1.UseVisualStyleBackColor = True
         ' 
-        ' LinkLabel1
+        ' VScrollBar1
         ' 
-        LinkLabel1.AutoSize = True
-        LinkLabel1.Location = New Point(21, 35)
-        LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(109, 21)
-        LinkLabel1.TabIndex = 0
-        LinkLabel1.TabStop = True
-        LinkLabel1.Text = "Ver más libros"
-        ' 
-        ' PictureBox4
-        ' 
-        PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
-        PictureBox4.Location = New Point(50, 88)
-        PictureBox4.Name = "PictureBox4"
-        PictureBox4.Size = New Size(51, 50)
-        PictureBox4.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox4.TabIndex = 1
-        PictureBox4.TabStop = False
+        VScrollBar1.Location = New Point(0, 436)
+        VScrollBar1.Name = "VScrollBar1"
+        VScrollBar1.Size = New Size(17, 80)
+        VScrollBar1.TabIndex = 2
         ' 
         ' frmMisLibros
         ' 
@@ -423,10 +432,10 @@ Partial Class frmMisLibros
         GroupBox5.ResumeLayout(False)
         GroupBox5.PerformLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
-        GroupBox4.ResumeLayout(False)
         GroupBox7.ResumeLayout(False)
         GroupBox7.PerformLayout()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
+        GroupBox4.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
 
@@ -462,4 +471,5 @@ Partial Class frmMisLibros
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents VScrollBar1 As VScrollBar
 End Class
